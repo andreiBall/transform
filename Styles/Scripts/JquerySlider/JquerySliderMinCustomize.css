@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+
+/* Slider: --начало-- */
+
+.IcoSlider{
+    background: url(../../../Styles/Scripts/JquerySlider/images/slider.png) no-repeat;
+	float: left;
+}
+
+.IcoServiceInfo {
+   background-position: -5px -4px;
+   height: 21px;
+   width: 37px;
+}
+
+.IcoServiceAuto {
+   background-position: -51px -4px;
+   height: 21px;
+   width: 37px;
+}
+
+.IcoServiceCustoms {
+   background-position: -99px -4px; 
+   height: 21px;
+   width: 37px;
+}
+
+.IcoServiceOversize {
+   background-position: -145px -4px;
+   height: 21px;
+   width: 37px;
+}
+
+.IcoServiceSea {
+   background-position: -190px -4px;
+   height: 21px;
+   width: 37px;
+}
+
+.IcoServiceTransit {
+   background-position: -235px -4px;
+   height:21px;
+   width:37px;
+}
+
+.IcoServiceMulti {
+   background-position: -5px -32px;
+   height:21px;
+   width:37px;
+}
+
+.IcoServiceInsurance {
+   background-position: -51px -32px;
+   height:21px;
+   width:37px;
+}
+
+.IcoServiceAvia {
+   background-position: -100px -32px; 
+   height:21px;
+   width:37px;
+}
+
+.IcoServiceWorking {
+   background-position: -145px -32px;
+   height:21px;
+   width:37px;
+}
+
+.IcoServiceUmbrela {
+    background-position: -189px -32px;
+    height:21px;
+    width:37px;
+}
+.Slider  {
+    background-color: #00598D;
+}
+    .Slider ul {
+        width: 32%;
+        float: right;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .Slider li {
+            background-color: rgba(127, 172, 197, 0.5);
+            height: 27px;
+	        list-style: none; 
+	        margin: 5px 0 5px 0;
+			width: 235px;
+			z-index: 10;
+	        position:relative;
+        }
+
+	        .Slider a {
+  	            color: #abd9ed;
+				font-size: 13px;
+  	            font-weight: bold;
+  	            text-decoration: none;
+  	            text-align: left;
+	        }
+
+  	            .Slider  i {
+				    border: 1px solid #9BCADE;
+      	            float: left;
+     	            margin: 3px 3px 0 3px;
+  	            }
+
+
+      	            .Slider span  {
+      	               display: block;					
+      	               margin: 5px 10px 5px 50px;
+      	            }
+			
+			#CapJavaScript {
+				   position: absolute;
+				   z-index: 0;
+				}
+			
+			.MainTabsContent {
+			    display: none;
+			}
+			
+		    	.ContentDesc  {
+			        margin: 250px 0 0 10px;
+			        position: absolute;
+			        width: 500px;
+			    	z-index: 10;
+		    	}
+				
+				    .ContentDesc  h2   {
+			            font-size: 34px;
+			        }
+			
+			        .ContentDesc  h2 ,
+                    .ContentDesc  p  {
+			            color: #ffffff;
+			    	    font-style: italic;
+			    		font-weight: normal;
+			        }
+			
+			        .ContentDesc  p {
+			           font-size: 18px;
+			        }
+					
+/* Slider: --конец-- */

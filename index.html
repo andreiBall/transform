@@ -1,11 +1,387 @@
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/svwp_style.css" type="text/css" media="screen" />
-    <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
-    <script src="js/jquery.slideViewerPro.1.5.js" type="text/javascript"></script>
- 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Название страницы</title>
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+	<meta name="Viewport" content="width=1260">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="Author" content="Компания Алерио">
+    <meta name="Reply-to" content="info@alerio.ru">
+    <meta name="Address" content="Адрес">
+    <link href="Styles/template_styles.css" rel="stylesheet" type="text/css">
+    <!-- Подключение CSS компонентов : начало -->
+    <link rel="stylesheet" href="Styles/Scripts/JquerySlider/JquerySliderMinCustomize.css">
+    <!-- Подключение CSS компонентов : конец -->
+    <!-- Подключение JS-библиотек : начало -->
+    <script src="Styles/JSLibraries/jquery-1.10.2.min.js"></script>
+    <!-- Подключение JS-библиотек : конец -->
+    <!-- Подключение JS-плагинов и их CSS : начало -->
+    <script src="Styles/Scripts/JquerySlider/JquerySliderMin.js"></script>
+	<!-- Подключение JS-плагинов и их CSS : начало -->
+    <!-- Подключение JS-скриптов: конец -->
+    <script src="Styles/Scripts/JquerySlider/script.js"></script>
+    <!-- Подключение JS-скриптов: конец -->
+    <link rel="icon" href="Styles/images/favicon.ico">
 </head>
 <body>
-
+    <!-- PseudoBody : начало -->
+    <div class="PseudoBody">
+        <!-- Wrapper : начало -->
+        <div id="Wrapper">
+            <!-- Шапка : начало --> 
+            <div id="Header">
+                <!-- HeaderIco: начало -->
+                <div class="HeaderIco FloatLeft">
+                    <a class="Ico IcoHome FloatLeft" href="#"></a>
+                    <a class="Ico IcoMap FloatLeft" href="#"></a>
+                    <a class="Ico IcoSearch FloatLeft" href="#"></a>
+                 </div>
+                <!-- HeaderIco: конец -->
+                <!-- HeaderMenu : начало -->
+                <div id="HeaderMenu">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Поставщикам</a></li>
+                        <li><a href="#">Статус груза</a></li>
+                        <li><a href="#">Оставить заявку</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                 <!--HeaderMenu : конец -->
+                 <!-- LanguagesSwitch: начало -->
+                 <div id="LanguagesSwitch">
+                    <a class="Ico IcoFlagRu FloatLeft" href="#"></a>
+                    <a class="Ico IcoFlagUk FloatLeft" href="#"></a>
+                    <a class="Ico IcoFlagSp FloatLeft" href="#"></a>
+                </div>
+				<!-- LanguagesSwitch: конец -->
+            </div>
+			<!-- Шапка : конец -->
+			<!-- GeneralNav: начало -->
+            <div id="GeneralNav">
+                  <a href="#" class="Ico Logo FloatLeft" title="на главную"></a>
+                   <div class="GeneralNavContact FloatLeft">
+                      <div id="GeneralNavTelefon">(812) 332-41-04</div>
+                      <div id="GeneralNavMail">info@mainlogist.com</div>
+                   </div>
+                   <div id="GeneralNavConsultation">
+                      <h5>Онлайн консультация</h5>
+                      <i class="Ico IcoScype FloatLeft"></i>
+                      <div class="FloatLeft">mainstream.logistics.llc</div>
+                      <i class="Ico IcoIcq FloatLeft"></i>
+                      <div class="FloatLeft">646090990</div>
+                    </div>
+            </div>
+			<!-- GeneralNav: конец -->
+            <!-- Основная часть страницы : начало -->
+            <div id="Content">
+                <!--TopBarCourse : начало -->
+                <div class="TopBarCourse FloatRight">
+                <ul>
+                   <li class="TopBarMnemo">&euro;</li>
+                   <li>41,5998</li>
+                   <li class="TopBarMnemo">&darr;</li>
+                   <li id="TopBarText">0,3396</li>
+                   <li class="TopBarMnemo">$</li>
+                   <li>30,1033</li>
+                   <li class="TopBarMnemo">&darr;</li>
+                   <li>0,398111</li>
+                  </ul>
+                </div>    
+                <!--TopBarCourse : конец -->
+                <!-- TopBar : начало -->
+                <div id="TopBar">
+                    <ul>
+                        <li><a href="#">Санкт-Петербург</a></li>
+                        <li><a href="#">Усть-Луга</a></li>
+                        <li><a href="#">Валенсия</a></li>
+                        <li><a href="#">Талин</a></li>
+                        <li><a href="#">Высоцк</a></li>
+                        <li><a href="#">Хамина</a></li>
+                        <li><a href="#">Котка</a></li>
+                        <li><a href="#">Мурманск</a></li>
+                    </ul>
+                </div>
+                <!-- TopBar: конец -->
+                <!-- Slider: начало -->
+                  <div class="Slider FloatLeft">
+                      <ul>
+                         <li>
+                            <a href="#" Data-Tab="#TabInfo">
+                               <i class="IcoSlider IcoServiceInfo"></i>
+                               <span>Таможенное оформление</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabAuto">
+                               <i class="IcoSlider IcoServiceAuto"></i>
+                               <span>Морские перевозки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabCustoms" >
+                               <i class="IcoSlider IcoServiceCustoms"></i>
+                               <span>Авиаперевозки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabOversize">
+                               <i class="IcoSlider IcoServiceOversize"></i>
+                               <span>Негабаритные грузы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabSea" >
+                               <i class="IcoSlider IcoServiceSea"></i>
+                               <span>Железнодорожные перевозки</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabTransit" >
+                               <i class="IcoSlider IcoServiceTransit"></i>
+                               <span>Мультимодальные транзит</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabMulti">
+                               <i class="IcoSlider IcoServiceMulti"></i>
+                               <span>Внутрипортовое экспедирование</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabInsurance" >
+                               <i class="IcoSlider IcoServiceInsurance"></i>
+                               <span>Страхование грузов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabAvia">
+                               <i class="IcoSlider IcoServiceAvia"></i>
+                               <span>Сборные грузы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabInsurance">
+                               <i class="IcoSlider IcoServiceWorking"></i>
+                               <span>Внутритаможенный конроль</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" Data-Tab="#TabMulti">
+                               <i class="IcoSlider IcoServiceUmbrela"></i>
+                               <span>Негабаритные грузы</span>
+                            </a>
+                        </li>
+                       </ul>
+					   <div id="CapJavaScript">
+					        <div class="ContentDesc">
+						        <h2>Справочная информация</h2>
+						        <p> Благодаря успешному и многолетнему опыту сотрудников нашей компании 
+						        в сфере международной транспортной логистики и внешнеэкономической деятельности, 
+						        создана эффективная система работы по таможенному оформлению грузов и оптимальный механизм 
+						        доставки грузов различных видов и назначения.</p>
+						   </div>
+					       <img src="Styles/Scripts/JquerySlider/images/info.jpg" alt="Справочная информация">
+					   </div>
+                       <div id="TabInfo" class="MainTabsContent">
+					        <div class="ContentDesc">
+							    <h2>Справочная информация</h2>
+						        <p> Благодаря успешному и многолетнему опыту сотрудников нашей компании 
+						        в сфере международной транспортной логистики и внешнеэкономической деятельности, 
+						        создана эффективная система работы по таможенному оформлению грузов и оптимальный механизм 
+						        доставки грузов различных видов и назначения.</p>
+							</div>
+                            <img src="Styles/Scripts/JquerySlider/images/info.jpg" alt="Справочная информация">
+                       </div>
+                       <div id="TabAuto" class="MainTabsContent">
+					        <div class="ContentDesc">
+						        <h2>Автомобильные перевозки</h2>
+						        <p> Компания Mainstream Logistics осуществляет выгодные автомобильные перевозки груза, 
+								основным преимуществом которых является высокая маневренность транспортного средства, а 
+								также возможность доставки «от двери до двери». Это выгодно отличает данный вид перевозок 
+								от всех остальных</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/auto.jpg" alt="Автомобильные перевозки">
+                       </div>
+                       <div id="TabCustoms" class="MainTabsContent">
+					        <div class="ContentDesc">
+							    <h2>Тамможенное оформление</h2>
+						        <p>Грамотное таможенное оформление грузов позволяет наладить отношения с иностранными 
+								партнерами в сжатые сроки, избежав возникновения проблемных ситуаций. Mainstream Logistics 
+								предоставляет услуги по таможенному оформлению грузов.</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/customs.jpg" alt="Тамможенное оформление">
+                       </div>
+                       <div id="TabOversize" class="MainTabsContent">
+					        <div class="ContentDesc">
+							    <h2>Негабаритные грузы</h2>
+						        <p>Mainstream Logistics предлагает полный комплекс услуг по доставке тяжеловесных 
+								и негабаритных грузов в любую точку мира. Специалисты компании, помогут Вам выбрать 
+								оптимальный вариант доставки Вашего груза.</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/oversize.jpg" alt="Негабаритные грузы">
+                       </div>
+                       <div id="TabSea" class="MainTabsContent">
+					        <div class="ContentDesc">
+						        <h2>Морские перевозки</h2>
+						        <p>Более 60% мирового грузооборота занимают морские контейнерные перевозки, и с каждым годом 
+								этот процент увеличивается. Это обусловлено рядом преимуществ, которыми обладают международные 
+								морские перевозки грузов:</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/sea.jpg" alt="Морские перевозки">
+                       </div>
+                       <div id="TabTransit" class="MainTabsContent">
+					        <div class="ContentDesc">
+							    <h2>Таможенный транзит</h2>
+						        <p>Оформление внутреннего таможенного транзита (ВТТ) – процедура, при которой иностранные 
+								товары перевозятся между таможенными органами по таможенной территории стран таможенного союза 
+								без уплаты пошлин, налогов и применения запретов и ограничений экономического характера.</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/transit.jpg" alt="Таможенный транзит">
+                       </div>
+                       <div id="TabMulti" class="MainTabsContent">
+					        <div class="ContentDesc">
+						        <h2>Мультимодальные перевозки</h2>
+						        <p>Осуществление мультимодальных перевозок грузов (с привлечением двух и более видов
+								транспорта) является одним из ключевых направлений деятельности компании Mainstream 
+								Logistics.</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/multi.jpg" alt="Мультимодальные перевозки">
+                       </div>
+                       <div id="TabInsurance" class="MainTabsContent">
+					        <div class="ContentDesc">
+						        <h2>Страхование грузов</h2>
+						        <p>Компания «Мэйнстрим Лоджистикс» рада предложить Вам услугу по страхованию грузов 
+								«от всех рисков». Наша компания сотрудничает с ведущими российскими страховыми компаниями.</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/insurance.jpg" alt="Страхование грузов">
+                       </div>
+                       <div id="TabAvia" class="MainTabsContent">
+					        <div class="ContentDesc">
+						        <h2>Мультимодальные перевозки</h2>
+						        <p>Осуществление мультимодальных перевозок грузов (с привлечением двух и более видов
+								транспорта) является одним из ключевых направлений деятельности компании Mainstream 
+								Logistics.</p>
+						    </div> 
+                          <img src="Styles/Scripts/JquerySlider/images/avia.jpg" alt="Мультимодальные перевозки">
+                       </div>
+                  </div>
+                <!-- Slider: конец -->
+                <!-- ArticleList : начало -->  
+                <div class="ArticleList FloatRight">
+                    <h1><span>Инкотермс-2010</span></h1>
+                    <p>Международные торговые термины представляют собой стандартные условия договора купли-продажи, 
+                    они определены заранее в международно признанном документе и вступают в силу </p>
+                    <a href="#">Подробнее</a>
+                    <h1>
+					    <span>Типы контейнеров</span>
+					</h1>
+                    <p>Независимо от назнаваения все контейнеры стандартизированы по массе брутто, габаритам, присоединительным 
+                    размерам, а также по конструкции присоединительных устройств к подвижному составу железнодорожного и
+                    автомобильного транпорта и к захватным органам погрузочно-разгрузочных машин.</p>
+                    <a href="#">Подробнее</a>
+                    <h1>
+					    <span>Классы опасности грузов</span>
+					</h1>
+                    <p>Для каждого вида транспорта характерны свои нормы и правила организации перевозрк, оформления документации, 
+                    маркировки, требований к подвижному составу и ответственности персонала.</p>
+                    <a href="#">Подробнее</a>
+                    <h1>
+					    <span>Типы и сорта палет</span>
+					</h1>
+                    <p>В международных грузоперевозках обычно используются сертифицированные европейские или финские палеты, 
+                    соответствующие фитосанитарным и иным требованиям, о чем свдительствуют клейма на каждой палете</p>
+                    <a href="#">Подробнее</a>
+                    <h1>
+					    <span>Типы и сорта палет</span>
+					</h1>
+                    <p>В международных грузоперевозках обычно используются сертифицированные европейские или финские палеты, 
+                    соответствующие фитосанитарным и иным требованиям, о чем свдительствуют клейма на каждой палете</p>
+                    <a href="#">Подробнее</a>
+                    <h1>
+					    <span>Типы и сорта палет</span>
+					</h1>
+                    <p>В международных грузоперевозках обычно используются сертифицированные европейские или финские палеты, 
+                    соответствующие фитосанитарным и иным требованиям, о чем свдительствуют клейма на каждой палете</p>
+                    <a href="#">Подробнее</a>
+                    <h1>
+					    <span>Типы и сорта палет</span>
+					</h1>
+                    <p>В международных грузоперевозках обычно используются сертифицированные европейские или финские палеты, 
+                    соответствующие фитосанитарным и иным требованиям, о чем свдительствуют клейма на каждой палете</p>
+                    <div id="CushionA">
+					    <a href="#">Подробнее</a>
+					</div>
+                </div>
+                <!-- ArticleList : конец -->
+                <!-- LeftSidebar : начало -->
+                <div class="LeftSidebar FloatLeft">
+                    <h1>О компании</h1>
+                    <p>ООО «Мэйнстрим Лоджистикс» - транспортно-экспедиторская компания.Основное поле нашей деятельности -
+                    перевозка контейнерных грузов и внутрипортовое экспедирование. Наличие договоров с основными морскими 
+                    линиями и терминалами, большой опыт работы в данной области и самый внимательный подход к каждому 
+                    клиенту позволяют нам оказывать действительно качественные услуги. Нам нравится то, что мы делаем, 
+                    и мы будем рады быть Вам полезными в развитии Вашего бизнеса.</p>
+                    <h2>Ценности</h2>
+                    <p>Эффективность - мы стремимся достигать поставленных целей, быть уникальными в каждом проекте,
+                    каждой инициативе.</p>
+                    <p>Качество - высокое качество наших услуг основано на строгой технологической дисциплине и 
+                    современных стандартах управления.</p>
+                    <p>Профессионализм - мы постоянно ведем поиск талантов, повышаем профессиональный уровень.</p>
+                    <h2>Услуги</h2>
+                    <ul>
+                        <li>таможенное оформление грузов</li>
+                        <li>экспедиторское обслуживание грузов в портах Усть-Луга, Санкт-Петербург, Хамина,  Таллин, Высоцк</li>
+                        <li>организация международных мультимодальных перевозок генеральных и контейнерных грузов</li>
+                        <li>доставка "от двери до двери"</li>
+                        <li>железнодорожные перевозки по России</li>
+                        <li>организация морских и речных перевозок</li>
+                        <li>перевозка контейнеров</li>
+                        <li>организация авиаперевозок из Европы</li>
+                    </ul>
+                </div>
+                <!-- LeftSidebar : конец -->
+                <!-- NewsList : начало --> 
+                <div id="NewsList" >
+                    <h1>Новости</h1>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                    <time>2011-11-07</time>
+                    <p>В Петербурге пройдет церемония вручения высшей театральной премии</p>
+                </div>
+                <!-- NewsList : конец -->
+                <!-- BottomBar : начало -->
+                <div class="BottomBar Сlear"></div>
+                <!-- BottomBar : конец -->
+            </div>
+            <!-- Основная часть страницы : конец -->
+        </div>
+        <!-- Wrapper : конец -->
+        <!-- Footer : начало -->
+        <div id="Footer">
+		   <p class="Alerio FloatRight"><a href="http://www.alerio.ru">Разработка сайта - компания «Алерио»</a></p>
+		   <address>
+              <p>190020, Санкт-Петербург, ул. Бумажная, д.9, офис 510</p>
+              <p>тел.: +7 (812) 332 41 04</p>
+              <p>e-mail: info@mainlogist.com </p>
+		   </address>
+		   <p>&copy; 2011 ООО "Мэйстрим Лоджистикс"</p>
+		   
+        </div>
+        <!-- Footer : конец -->
+    </div>
+	<!-- PseudoBody : конец -->
 </body>
 </html>

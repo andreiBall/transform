@@ -1,0 +1,573 @@
+@CHARSET "UTF-8";
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+version:   1.0
+author:    Alerio Llc
+email:     info@alerio.ru
+website:   http://www.alerio.ru/
+-----------------------------------------------------------------------------*/
+
+@media screen { 
+    
+       /* =СТИЛИ ПРИБИТОГО ФУТЕРА=       
+    -----------------------------------------------------------------------------*/ 
+    html, 
+    body, 
+    .PseudoBody, 
+    #Wrapper {
+        height: 100%;
+        padding: 0px;
+        max-width: 1131px;
+        margin: auto;
+    }     
+   
+    #Wrapper {
+        background: #ffffff;
+        height: auto !important;
+        height: 100%;
+        min-height: 100%;
+   }
+   
+    #Content {
+        padding-bottom: 100px; 
+        margin: 0 15px 0 19px;        
+   }
+   
+    #Footer {
+        background: #00598D;
+        height: 100px;
+        margin-top: -100px;
+        /* когда футер выровнен по центру : --начало-- */
+        margin-left:  auto;
+        margin-right:  auto;
+        width: 1131px;  /* = ширине обертки */
+        /* когда футер выровнен по центру : --конец-- */
+   }
+    
+    /* =БАЗОВЫЕ СТИЛИ=       
+    -----------------------------------------------------------------------------*/    
+    .PseudoBody {
+        width: 100%;
+    }
+    
+    body {
+        font-family: Trebuchet MS, Tahoma, Verdana, serif, sans-serif;
+        font-size: 14px;
+        min-width: 1200px;
+        /*line-height: 150%;*/
+    }
+        
+    .PseudoBody h1,
+    .PseudoBody h2,
+    .PseudoBody h3,
+    .PseudoBody h4,
+    .PseudoBody h5,
+    .PseudoBody h6,
+    .PseudoBody pre,
+    .PseudoBody blockquote,
+    .PseudoBody form,
+    .PseudoBody fieldset,
+    .PseudoBody table,
+    .PseudoBody ul,
+    .PseudoBody hr {
+        margin: 5px 0;
+    }
+    
+    .PseudoBody h1,
+    .PseudoBody h2,
+    .PseudoBody h3,
+    .PseudoBody h4,
+    .PseudoBody h5,
+    .PseudoBody h6 {
+       color: #222222;
+       font-weight: bold;
+    }
+    
+   .PseudoBody h1 {
+        font-size: 22px;
+    }
+    
+    .PseudoBody h2 {
+        font-size: 18px;
+    }
+    
+    .PseudoBody h3 {
+        color: #A40000;
+        font-size: 16px;
+    }
+    
+    .PseudoBody h4 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .PseudoBody h5 {
+        font-size: 15px;
+    }
+    
+    .PseudoBody h6 {
+        font-size: 14px;
+    }
+    
+    .PseudoBody ul,
+    .PseudoBody ol {
+        list-style-position: outside;
+    }
+    
+    .PseudoBody ul {
+        display: block;
+        list-style-type: disc;
+    }
+    
+    .PseudoBody ol {
+        display: block;
+        list-style-type: decimal;
+        padding: 3px 0;
+    }
+    
+    .PseudoBody li {
+        padding: 3px 0;
+    }
+    
+    .PseudoBody table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 15px 0;
+        width: 100%;
+    }
+    
+    .PseudoBody table td {
+        background: #f5f5f5;
+        border: 1px #A4A4A4 solid;
+        padding: 2px 5px;
+    }
+    
+    .PseudoBody table th {
+        background: #f5f5f5;
+        border: 1px #A4A4A4 solid;
+        color: #A40000;
+        font-weight: bold;
+        padding: 2px 5px;
+        text-align: center;
+    }   
+   
+    .PseudoBody a,
+    .PseudoBody a:hover,
+    .PseudoBody a:link,
+    .PseudoBody a:visited {
+        cursor: pointer !important;
+        outline: medium none;
+    }
+    
+    .PseudoBody a[target='_blank'],
+    .PseudoBody a[target='blank']{
+        background: url(images/iconOut.png) no-repeat right center;
+        color: #850000;
+        font-weight: bold;
+        padding: 0 12px 0 0;
+    }
+    
+    .PseudoBody img {
+        border: 0;      /* Убирает рамку у посещенных по ссылке изображений */
+    }
+    
+    .PseudoBody hr { 
+        border: 1px inset;
+        color: gray;
+        display: block;
+        height: 2px;
+        
+        
+    }
+    
+    .PseudoBody input, 
+    .PseudoBody textarea, 
+    .PseudoBody select {
+        background: #eeeeee;
+        border: 1px solid #a7a7a7;
+        padding: 2px 2px;
+    }
+    
+    .PseudoBody input, .PseudoBody textarea {
+        width: 100%;
+    }
+    
+    .PseudoBody label {
+        display: block;
+        text-align: right;
+    }
+    
+    .PseudoBody label span {
+        color: red;
+    }
+    
+    .PseudoBody b, 
+    .PseudoBody strong {
+        font-weight: bold !important; 
+    }
+    
+    .PseudoBody p b, 
+    .PseudoBody p strong {
+        color: #7b7b7b;
+    }
+	
+    /*.PseudoBody div {
+        border: #000000 1px solid;
+    } */
+	
+    /* =ОФОРМЛЕНИЕ ДОКУМЕНТА=  
+    /*  Далее файл структурируем по принципу 'сверху вниз': список стилей составляеся в том порядке, в котором данные стили применяются (появляются в документе) на странице.
+    /*  Любая секция структуры документа: #Header(Шапка), #TopBar(Верхняя панель), #LeftSidebar (Левая боковая панель), #RightSidebar (Правая боковая панель), #BottomBar (Нижняя)
+    /*  могу содержать меню и другую навигацию: #GeneralNav - основное меню, #SectionNav - меню раздела, #SubNav - подменю, #AdditionalNav - дополнительное меню (навигация).
+    -----------------------------------------------------------------------------*/
+    /* Обертка : --начало-- */
+    #Wrapper {
+	    text-align: left;
+        margin: 0 auto;
+        width: 1260px; /* Для адаптивной верстки это значение необходимо изменить на 100% */
+    }
+        /* Шапка : --начало-- */
+        #Header  {
+            background-color: #00598D;
+            height: 37px;
+        }
+            /* HeaderIco : начало -- */
+            .HeaderIco  {
+                margin: 10px 0 0 31px;
+            }
+			
+				.HeaderIco  a  {
+			  	  margin: 0 9px 0 0;
+				}
+            
+            		.Ico  {
+             		    background: url(../Styles/images/sprite.png) no-repeat;
+						}
+			
+            		.IcoHome  {
+             		    background-position: -277px -16px;
+             		    height: 16px;
+						width: 18px;
+            		}
+			
+            		.IcoMap  {
+             	 	    background-position: -296px -16px;
+						height: 16px;
+						width: 17px;
+            		}
+			
+            		.IcoSearch  {
+                        background-position: -315px -16px;
+						height: 16px;
+						width: 17px;
+                    }
+			/* HeaderIco : конец -- */
+            /* HeaderMenu : начало -- */
+            #HeaderMenu ul {
+			    margin:0px 0 0 0px;
+                padding: 10px 0 0 255px;
+            }
+			
+                #HeaderMenu li  {
+				    float: left;
+                    list-style: none;
+                    margin: 0 32px 0 0;
+                }
+			
+                    #HeaderMenu a  {
+                        color: #ffffff;
+                        font-size: 13px;
+                        font-weight: bold;						
+                        text-decoration: none;
+                    }
+            /* HeaderMenu : конец -- */
+            /* LanguagesSwitch : начало -- */
+            #LanguagesSwitch {
+                padding: 3px 0 0 863px;
+            }
+            
+                #LanguagesSwitch a {
+                    margin: 0 20px 0 0;
+                }
+				
+                   .IcoFlagRu  {
+                        background-position: -244px -2px;
+						height: 11px;
+						width: 16px;
+                   }
+				   
+                   .IcoFlagUk  {
+                        background-position: -281px -2px;
+						height: 11px;
+						width: 16px;
+                   }
+				   
+                   .IcoFlagSp  {
+                        background-position: -318px -2px;
+						height: 11px;
+						width: 16px;
+                   }
+            /* LanguagesSwitch : конец -- */
+		/* Шапка : --конец-- */	
+		/* GeneralNav : начало -- */
+		#GeneralNav {
+		    background-color: #FFFFFF;
+		}
+
+    		.Logo {
+				background-position: -0px -0px;
+                height: 75px;
+                width: 242px;				
+            }
+                
+				/* GeneralNavContact : начало -- */
+                .GeneralNavContact div,
+				#GeneralNavConsultation div  {
+                    color: #3EADE3;
+                    font-family: arial, serif, sant-serif;
+                }
+                
+                #GeneralNavTelefon {
+                    font-weight: bold;
+                    font-size: 18.75px;
+					margin: 30px 0 0 405px;
+                }
+                
+                #GeneralNavMail {
+                   font-size: 16.67px;
+				   margin: 5px 0 0 390px;
+                }
+                /* GeneralNavContact : конец -- */
+				/* GeneralNavConsultation : начало -- */
+                #GeneralNavConsultation {
+                    padding: 7px 0 0 850px;
+                }
+                
+                    .IcoScype {
+                        background-position: -277px -35px;
+						height: 20px;
+						width: 20px;
+                    }
+                
+                   .IcoIcq  {
+                        background-position: -301px -35px;
+						height: 20px;
+                        margin: 0 0 0 10px;
+						width: 20px;
+                    }
+               
+				/* GeneralNavConsultation : конец -- */
+        /* GeneralNav : конец -- */
+        /* Основная часть страницы : --начало-- */
+		
+        #Content {
+            width: 1097px;
+        }
+            /* TopBarCourse : начало -- */
+            .TopBarCourse {
+                font-weight: bold;
+            }
+               
+                .TopBarCourse li{
+                   float: left;
+				   list-style: none;
+                }
+               
+                .TopBarMnemo {
+                   color: #3EADE3;
+                   font-size: 17px;
+                }
+					
+            #TopBarText{
+                margin: 0px 5px 0px 0px;
+            }
+            /* TopBarCourse : конец -- */
+            /* TopBar : --начало-- */        
+            #TopBar {
+                background-color: #D7EAF9;
+				border: 1px dashed #9BC8DF; 
+				height: 30px;
+                margin: 60px 0 0 0;
+                width: 69.5%;
+            }
+			    #TopBar ul{
+				    position: absolute;
+				}
+				
+                    #TopBar li {
+					    float: left;
+                        list-style: none; 
+                        margin: 0 13px 0 20px;
+                    }
+				
+                        #TopBar a{
+						    border-bottom: 1px dashed; 
+                            color: #015696;
+							font-weight: 700;
+                            font-size: 13px;
+                            text-decoration: none;
+                        }
+            /* TopBar : --конец-- */
+			/* Slider: --начало-- */
+           .Slider{
+                height: 430px;
+                margin: 10px 0 0 0;
+				width: 765px;
+				z-index: 1;
+            }
+            /* Slider: --конец-- */
+			/* Правая боковая панель : --начало-- */
+            .ArticleList {            
+                background-color: #D7EAF9;
+                border: 1px dashed #9BC8DF; 
+				margin: 10px 0 0 0;
+                width: 256px;
+            }
+                
+                .ArticleList h1{
+                   margin: 10px 20px 0px 20px;
+                }
+                
+                    .ArticleList span{
+					   border-bottom: 2px dotted;
+                       color: #0163a0;
+                       font-size: 16px;
+                    }
+                
+                .ArticleList a{
+				   border-bottom: 1px dotted;
+                   color: #000000;
+				   font-size: 10px;
+                   margin: 0 0 0 20px;
+                   text-decoration: none;
+                }
+				
+                #CushionA{
+				   margin: 0 0 10px 0;
+				}
+				
+                .ArticleList p{
+                   font-size: 10px;
+                   line-height: 130%;
+                   margin: 10px 20px 10px 20px;
+                }
+            /* Правая боковая панель : --конец-- */
+			/* LeftSidebar : --начало-- */
+            .LeftSidebar {
+                margin: 21px 9px 0 9px;
+				width: 512px;/* при фксированой ширине шаблона, ширина левой боковой так же будет иметь постоянную величину, просто она будет вычислена автоматически на основе ширины Обертки (#Wrapper) */
+            }
+                .LeftSidebar h1{
+                    color: #00599d;
+                }
+                
+                .LeftSidebar h2{
+                    margin: 24px 0px 0px 0px;
+                }
+                
+                .LeftSidebar p{
+                    font-size: 14px;
+                    margin: 10px 0px 0px 0px;
+                }
+                
+                .LeftSidebar li{
+                    font-weight: 600;
+                    font-size: 13px;
+					margin: 0px 0px 0px 25px;
+                }
+            /* LeftSidebar: --конец-- */
+            /* NewsList: --начало-- */
+            #NewsList {/* для случая, когда 1 колонка */
+                margin: 465px 9px 0 9px; 
+				width: 80%;
+            }
+            
+                #NewsList h1{
+                    color: #00599d;
+                    font-size: 21px;
+			    	margin: 0 0 10px 0;
+                }
+            
+			    #NewsList time {
+			        color: #34a9ef;
+                    font-size: 12px;
+			    }
+		 
+                #NewsList p {
+                    font-size: 12px;
+					margin: 10px 0 24px 0px;
+                }
+            /* NewsList : --конец-- */
+			/* Содержимое страницы : --начало-- */
+            .LeftSidebar + #NewsList {/* для случая, когда 2 колонки */
+                margin-left: 20%; /* = leftside width */
+				width: 49%;
+            }
+            
+            .ArticleList + #NewsList {/* для случая, когда 3 колонки */
+                margin-left: 20%; /*  = .LeftSidebar width */
+                margin-right: 20%; /*  = .ArticleList width */
+				width: 60%;        /* = #Content - .LeftSidebar - #RightSidebar */
+            }
+            /* Содержимое страницы : --конец-- */
+            /* Нижняя панель : --начало-- */
+            .BottomBar {
+                height: 23px;
+            }
+            /* Нижняя панель : --конец-- */
+        /* Основная часть страницы : --конец-- */
+        /* Подвал : --начало-- */
+        /* Примечание: подвал может быть вынесен за пределы обертки, если это необходим для резинки в высоту*/
+        #Footer {
+            clear: both;
+        }
+            
+            #Footer address{
+               padding: 20px 0 20px 0;
+            }
+
+                #Footer  p{
+                   color: #ffffff;
+				   font-size: 12px;
+			       font-style: normal;
+                   margin: 3px 0 0 29px;
+                }
+
+			.Alerio a {
+			    margin: 0 35px 0 0;
+				color: #ffffff;
+				font-size: 12px;
+				text-decoration: none;
+            }
+        /* Подвал : --конец-- */
+    /* Обертка : --конец-- */
+    /* =КЛАССЫ, ОБЛЕГЧАЮЩИЕ ПРОЦЕСС ВЕРСТКИ МАКЕТА=
+    -----------------------------------------------------------------------------*/    
+    .FloatLeft /* Or whatever name you like */ {
+        float: left;
+    }
+     
+    .FloatRight /* Or whatever name you like */ {
+        float: right;
+    }
+    
+    /* Class for clearing floats */
+    .Сlear {
+        clear: both;
+    }
+    /* =КЛАССЫ ОФОРМЛЕНИЯ ОШИБОК
+    -----------------------------------------------------------------------------*/
+    .error {
+        color: red;
+    }
+    
+    input.error,
+    textarea.error  {
+        border-color: red !important;
+	    color: red;
+    }
+    
+    p.error {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }
